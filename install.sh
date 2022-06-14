@@ -1,13 +1,15 @@
 #!/bin/bash
 
 PS3='Please enter your choice: '
+
+         ls -la /usr/bin/
 options=("Discord.js" "Discord.py")
 
 select opt in "${options[@]}"
 do
     case $opt in
         "Discord.js")
-         ls -la /usr/bin/
+         echo ls -la /usr/bin/
             apt install nodejs npm;
             ls -la /usr/bin/
             /usr/local/bin/npm install discord.js;
