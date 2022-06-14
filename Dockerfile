@@ -21,4 +21,6 @@ WORKDIR /home/container
 COPY ./entrypoint.sh /entrypoint.sh
 COPY ./install.sh /install.sh
 
+RUN cat install.sh
+
 CMD ["/bin/bash", "/entrypoint.sh"]
