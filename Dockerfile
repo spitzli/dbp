@@ -10,7 +10,7 @@ LABEL author="Dominik Spitzli"  \
 
 RUN apt update && apt upgrade -y
 
-RUN apt curl ca-certificates openssl git tar bash sqlite fontconfig \
+RUN apt install curl ca-certificates openssl git tar bash sqlite fontconfig \
     && adduser --disabled-password --home /home/container container
 
 USER container
