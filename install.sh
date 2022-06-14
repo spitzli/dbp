@@ -8,9 +8,11 @@ do
     case $opt in
         "Discord.js")
             echo "you chose choice 1"
+            exit 0
             ;;
         "Discord.py")
             echo "you chose choice 2"
+            exit 0
             ;;
         *) echo "invalid option $REPLY";;
     esac
