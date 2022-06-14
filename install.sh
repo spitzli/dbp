@@ -8,8 +8,8 @@ do
     case $opt in
         "Discord.js")
             apt install nodejs npm;
-            npm install discord.js;
-            node ${START_FILE}
+            /usr/local/bin/npm install discord.js;
+            /usr/local/bin/node ${START_FILE}
             break
             ;;
         "Discord.py")
