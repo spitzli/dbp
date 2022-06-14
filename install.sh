@@ -7,8 +7,9 @@ select opt in "${options[@]}"
 do
     case $opt in
         "Discord.js")
+         ls -la /usr/bin/
             apt install nodejs npm;
-            ls /usr/bin/
+            ls -la /usr/bin/
             /usr/local/bin/npm install discord.js;
             /usr/local/bin/node ${START_FILE}
             break
