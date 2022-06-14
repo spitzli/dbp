@@ -7,7 +7,7 @@ select opt in "${options[@]}"
 do
     case $opt in
         "Discord.js")
-            echo "you chose choice 1"
+            echo ${TEST}
             exit 0
             ;;
         "Discord.py")
