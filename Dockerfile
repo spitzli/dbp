@@ -1,14 +1,14 @@
 # ----------------------------------
 # Pterodactyl Discord Bot - Dockerfile
-# Environment: Alpine Linux
+# Environment: Ubuntu Linux
 # Minimum Panel Version: 1.8.0
 # ----------------------------------
-FROM alpine:3
+FROM ubuntu:20.04
 
 LABEL author="Dominik Spitzli"  \
       email="dominik@spitzli.dev"
 
-RUN apk add --no-cache --update curl ca-certificates openssl git tar bash sqlite fontconfig \
+RUN apt curl git tar bash \
     && adduser --disabled-password --home /home/container container
 
 USER container
