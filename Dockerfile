@@ -8,7 +8,7 @@ FROM ubuntu:20.04
 LABEL author="Dominik Spitzli"  \
       email="dominik@spitzli.dev"
 
-RUN apt curl git tar bash \
+RUN apt curl ca-certificates openssl git tar bash sqlite fontconfig \
     && adduser --disabled-password --home /home/container container
 
 USER container
