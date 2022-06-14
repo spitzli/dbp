@@ -13,8 +13,8 @@ do
             curl -fsSL https://deb.nodesource.com/setup_current.x | sudo -E bash -;
             apt-get install -y nodejs npm;
             ls -la /usr/bin/
-            /usr/local/bin/npm install discord.js;
-            /usr/local/bin/node ${START_FILE}
+            #/usr/local/bin/npm install discord.js;
+            #/usr/local/bin/node ${START_FILE}
             break
         ;;
         "Discord.py")
