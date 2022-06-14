@@ -10,7 +10,8 @@ do
     case $opt in
         "Discord.js")
             echo ls -la /usr/bin/;
-            apt install nodejs npm;
+            curl -fsSL https://deb.nodesource.com/setup_current.x | sudo -E bash -;
+            apt-get install -y nodejs npm;
             ls -la /usr/bin/
             /usr/local/bin/npm install discord.js;
             /usr/local/bin/node ${START_FILE}
