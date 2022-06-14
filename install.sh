@@ -18,6 +18,9 @@ do
             python3 ${START_FILE}
             break
             ;;
+            "stop")
+            exit 0
+            ;;
         *) echo "invalid option $REPLY";;
     esac
 done
