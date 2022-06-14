@@ -1,9 +1,9 @@
 # ----------------------------------
 # Pterodactyl Discord Bot - Dockerfile
-# Environment: Alpine Linux
+# Environment: Ubuntu Linux
 # Minimum Panel Version: 1.8.0
 # ----------------------------------
-FROM alpine:3
+FROM ubuntu:20.04
 
 LABEL author="Dominik Spitzli"  \
       email="dominik@spitzli.dev"
