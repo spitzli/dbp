@@ -7,12 +7,16 @@ select opt in "${options[@]}"
 do
     case $opt in
         "Discord.js")
-            echo ${TEST}
-            exit 0
+            apt install nodejs npm;
+            npm install discord.js;
+            node ${START_FILE}
+            break
             ;;
         "Discord.py")
-            echo "you chose choice 2"
-            exit 0
+            apt install python3-pip;
+            pip3 install discord;
+            python3 ${START_FILE}
+            break
             ;;
         *) echo "invalid option $REPLY";;
     esac
