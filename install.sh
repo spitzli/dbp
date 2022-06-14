@@ -7,13 +7,13 @@ select opt in "${options[@]}"
 do
     case $opt in
         "Discord.js")
-            apt install nodejs npm;
+            apk add --update nodejs npm;
             npm install discord.js;
             node ${START_FILE}
             break
             ;;
         "Discord.py")
-            apt install python3-pip;
+            apk add --update python3-pip;
             pip3 install discord;
             python3 ${START_FILE}
             break
